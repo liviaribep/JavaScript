@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 4</title>
+</head>
+<body>
+    
+    <h2 id="titulo"> Exemplo 2 </h2>
+    <img src="quadrado-com-4-lados.png" id="imagem1">
+    <img src="circulo.png" id="imagem2"> 
+    <button onclick="exibir();"> Exibir </button> <br>
+
+    <script>
+     function exibir() {
+        const elemento1 = document.getElementById("imagem1");    
+        const elemento2 = document.getElementById("imagem2");
+        let troca = elemento2.src;
+        document.getElementById("imagem2").src = elemento1.src;
+        document.getElementById("imagem1").src = troca;  
+        }
+    </script>
+</body>
+</html>
